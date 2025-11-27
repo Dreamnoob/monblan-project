@@ -3,4 +3,5 @@
 !.gitignore
 !README.md
 !app/
+!app/**
 app/.DS_Store

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <meta name="robots" content="noindex" />
+
+        <title>Monblan project</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@0,500;1,500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css" integrity="sha512-MQXduO8IQnJVq1qmySpN87QQkiR1bZHtorbJBD0tzy7/0U9+YIC93QWHeGTEoojMVHWWNkoCp8V6OzVSYrX0oQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/vendor.css" />
+<link rel="stylesheet" href="css/main.css" />
+
+    </head>
+
+    <body>
+        <div class="site">
+            <header class="header">
+    <div class="container">
+        <div class="header-inner">
+            <a href="/" class="header-logo">
+                <img src="img/logo.svg" alt="logo" />
+            </a>
+            <div class="header-wrapper">
+                <div class="header-top">
+                    <h1 class="header-title">monblanproject</h1>
+                    <div class="header-label">Start on 17-02-2016</div>
+                </div>
+                <ul class="header-list">
+                    <li class="header-item"><span>870</span> posts</li>
+                    <li class="header-item"><span>11,787</span> followers</li>
+                    <li class="header-item"><span>112</span> following</li>
+                </ul>
+                <div class="header-datepicker">
+                    <div class="header-datepicker-title">Date</div>
+                    <div class="header-groups">
+                        <div class="header-group">
+                            <label>
+                                <input type="text" class="header-datepicker-input" placeholder="from" name="from" readonly />
+                            </label>
+                            <div class="header-group-divider"></div>
+                            <button type="button" class="header-datepicker-reset" aria-label="Clear date">
+                                <img src="img/icons/reset.svg" alt="close" />
+                            </button>
+                            <div class="header-group-divider"></div>
+                            <button type="button" class="header-datepicker-toggle" aria-label="Open calendar">
+                                <img src="img/icons/calendar.svg" alt="calendar" />
+                            </button>
+                        </div>
+                        <div class="header-group">
+                            <label>
+                                <input type="text" class="header-datepicker-input" placeholder="to" name="to" readonly />
+                            </label>
+                            <div class="header-group-divider"></div>
+                            <button type="button" class="header-datepicker-reset" aria-label="Clear date">
+                                <img src="img/icons/reset.svg" alt="close" />
+                            </button>
+                            <div class="header-group-divider"></div>
+                            <button type="button" class="header-datepicker-toggle" aria-label="Open calendar">
+                                <img src="img/icons/calendar.svg" alt="calendar" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+            <main>
+                <section class="posts">
+                    <div class="container">
+                        <div class="posts-inner">
+                            <h2 class="visually-hidden">Posts</h2>
+                            <nav class="posts-nav">
+                                <button class="posts-view is-active" id="postGrid" aria-label="Grid view">
+                                    <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="6" height="6" />
+                                        <rect x="8" width="6" height="6" />
+                                        <rect x="16" width="6" height="6" />
+                                        <rect y="8" width="6" height="6" />
+                                        <rect y="16" width="6" height="6" />
+                                        <rect x="8" y="8" width="6" height="6" />
+                                        <rect x="8" y="16" width="6" height="6" />
+                                        <rect x="16" y="8" width="6" height="6" />
+                                        <rect x="16" y="16" width="6" height="6" />
+                                    </svg>
+                                </button>
+                                <button class="posts-view" id="postList" aria-label="List view">
+                                    <svg viewBox="0 0 24 22" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="6" height="6" />
+                                        <rect y="8" width="6" height="6" />
+                                        <rect y="16" width="6" height="6" />
+                                        <rect x="9" y="10" width="15" height="2" />
+                                        <rect x="9" y="18" width="15" height="2" />
+                                        <rect x="9" y="2" width="15" height="2" />
+                                    </svg>
+                                </button>
+                            </nav>
+                            <div class="posts-body">
+                                <ul class="posts-list">
+                                    <li class="posts-item">
+                                        <div class="posts-img">
+                                            <img src="img/posts/post-1.jpg" alt="post" />
+                                        </div>
+                                        <div class="posts-content">
+                                            <div class="posts-stats">
+                                                <div class="posts-stats-item">
+                                                    <div class="posts-stats-title">Today</div>
+                                                    <ul class="posts-stats-values">
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/like.svg" alt="like" />
+                                                            </div>
+                                                            <div class="posts-stats-text">128</div>
+                                                        </li>
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/comment.svg" alt="comment" />
+                                                            </div>
+                                                            <div class="posts-stats-text">31</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="posts-stats-item">
+                                                    <div class="posts-stats-title">9-08-2016</div>
+                                                    <ul class="posts-stats-values">
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/like.svg" alt="like" />
+                                                            </div>
+                                                            <div class="posts-stats-text">67</div>
+                                                        </li>
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/comment.svg" alt="comment" />
+                                                            </div>
+                                                            <div class="posts-stats-text">22</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="posts-info">
+                                                <div class="posts-info-title">Image upload</div>
+                                                <div class="posts-info-date">11-04-2016</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="posts-item">
+                                        <div class="posts-img">
+                                            <img src="img/posts/post-2.jpg" alt="post" />
+                                        </div>
+                                        <div class="posts-content">
+                                            <div class="posts-stats">
+                                                <div class="posts-stats-item">
+                                                    <div class="posts-stats-title">Today</div>
+                                                    <ul class="posts-stats-values">
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/like.svg" alt="like" />
+                                                            </div>
+                                                            <div class="posts-stats-text">128</div>
+                                                        </li>
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/comment.svg" alt="comment" />
+                                                            </div>
+                                                            <div class="posts-stats-text">31</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="posts-stats-item">
+                                                    <div class="posts-stats-title">9-08-2016</div>
+                                                    <ul class="posts-stats-values">
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/like.svg" alt="like" />
+                                                            </div>
+                                                            <div class="posts-stats-text">67</div>
+                                                        </li>
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/comment.svg" alt="comment" />
+                                                            </div>
+                                                            <div class="posts-stats-text">22</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="posts-info">
+                                                <div class="posts-info-title">Image upload</div>
+                                                <div class="posts-info-date">11-04-2016</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="posts-item">
+                                        <div class="posts-img">
+                                            <img src="img/posts/post-3.jpg" alt="post" />
+                                        </div>
+                                        <div class="posts-content">
+                                            <div class="posts-stats">
+                                                <div class="posts-stats-item">
+                                                    <div class="posts-stats-title">Today</div>
+                                                    <ul class="posts-stats-values">
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/like.svg" alt="like" />
+                                                            </div>
+                                                            <div class="posts-stats-text">128</div>
+                                                        </li>
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/comment.svg" alt="comment" />
+                                                            </div>
+                                                            <div class="posts-stats-text">31</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="posts-stats-item">
+                                                    <div class="posts-stats-title">9-08-2016</div>
+                                                    <ul class="posts-stats-values">
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/like.svg" alt="like" />
+                                                            </div>
+                                                            <div class="posts-stats-text">67</div>
+                                                        </li>
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/comment.svg" alt="comment" />
+                                                            </div>
+                                                            <div class="posts-stats-text">22</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="posts-info">
+                                                <div class="posts-info-title">Image upload</div>
+                                                <div class="posts-info-date">11-04-2016</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="posts-item">
+                                        <div class="posts-img">
+                                            <img src="img/posts/post-4.jpg" alt="post" />
+                                        </div>
+                                        <div class="posts-content">
+                                            <div class="posts-stats">
+                                                <div class="posts-stats-item">
+                                                    <div class="posts-stats-title">Today</div>
+                                                    <ul class="posts-stats-values">
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/like.svg" alt="like" />
+                                                            </div>
+                                                            <div class="posts-stats-text">128</div>
+                                                        </li>
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/comment.svg" alt="comment" />
+                                                            </div>
+                                                            <div class="posts-stats-text">31</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="posts-stats-item">
+                                                    <div class="posts-stats-title">9-08-2016</div>
+                                                    <ul class="posts-stats-values">
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/like.svg" alt="like" />
+                                                            </div>
+                                                            <div class="posts-stats-text">67</div>
+                                                        </li>
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/comment.svg" alt="comment" />
+                                                            </div>
+                                                            <div class="posts-stats-text">22</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="posts-info">
+                                                <div class="posts-info-title">Image upload</div>
+                                                <div class="posts-info-date">11-04-2016</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="posts-item">
+                                        <div class="posts-img">
+                                            <img src="img/posts/post-5.jpg" alt="post" />
+                                        </div>
+                                        <div class="posts-content">
+                                            <div class="posts-stats">
+                                                <div class="posts-stats-item">
+                                                    <div class="posts-stats-title">Today</div>
+                                                    <ul class="posts-stats-values">
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/like.svg" alt="like" />
+                                                            </div>
+                                                            <div class="posts-stats-text">128</div>
+                                                        </li>
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/comment.svg" alt="comment" />
+                                                            </div>
+                                                            <div class="posts-stats-text">31</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="posts-stats-item">
+                                                    <div class="posts-stats-title">9-08-2016</div>
+                                                    <ul class="posts-stats-values">
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/like.svg" alt="like" />
+                                                            </div>
+                                                            <div class="posts-stats-text">67</div>
+                                                        </li>
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/comment.svg" alt="comment" />
+                                                            </div>
+                                                            <div class="posts-stats-text">22</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="posts-info">
+                                                <div class="posts-info-title">Image upload</div>
+                                                <div class="posts-info-date">11-04-2016</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="posts-item">
+                                        <div class="posts-img">
+                                            <img src="img/posts/post-6.jpg" alt="post" />
+                                        </div>
+                                        <div class="posts-content">
+                                            <div class="posts-stats">
+                                                <div class="posts-stats-item">
+                                                    <div class="posts-stats-title">Today</div>
+                                                    <ul class="posts-stats-values">
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/like.svg" alt="like" />
+                                                            </div>
+                                                            <div class="posts-stats-text">128</div>
+                                                        </li>
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/comment.svg" alt="comment" />
+                                                            </div>
+                                                            <div class="posts-stats-text">31</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="posts-stats-item">
+                                                    <div class="posts-stats-title">9-08-2016</div>
+                                                    <ul class="posts-stats-values">
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/like.svg" alt="like" />
+                                                            </div>
+                                                            <div class="posts-stats-text">67</div>
+                                                        </li>
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/comment.svg" alt="comment" />
+                                                            </div>
+                                                            <div class="posts-stats-text">22</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="posts-info">
+                                                <div class="posts-info-title">Image upload</div>
+                                                <div class="posts-info-date">11-04-2016</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="posts-item">
+                                        <div class="posts-img">
+                                            <img src="img/posts/post-7.jpg" alt="post" />
+                                        </div>
+                                        <div class="posts-content">
+                                            <div class="posts-stats">
+                                                <div class="posts-stats-item">
+                                                    <div class="posts-stats-title">Today</div>
+                                                    <ul class="posts-stats-values">
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/like.svg" alt="like" />
+                                                            </div>
+                                                            <div class="posts-stats-text">128</div>
+                                                        </li>
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/comment.svg" alt="comment" />
+                                                            </div>
+                                                            <div class="posts-stats-text">31</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="posts-stats-item">
+                                                    <div class="posts-stats-title">9-08-2016</div>
+                                                    <ul class="posts-stats-values">
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/like.svg" alt="like" />
+                                                            </div>
+                                                            <div class="posts-stats-text">67</div>
+                                                        </li>
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/comment.svg" alt="comment" />
+                                                            </div>
+                                                            <div class="posts-stats-text">22</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="posts-info">
+                                                <div class="posts-info-title">Image upload</div>
+                                                <div class="posts-info-date">11-04-2016</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="posts-item">
+                                        <div class="posts-img">
+                                            <img src="img/posts/post-8.jpg" alt="post" />
+                                        </div>
+                                        <div class="posts-content">
+                                            <div class="posts-stats">
+                                                <div class="posts-stats-item">
+                                                    <div class="posts-stats-title">Today</div>
+                                                    <ul class="posts-stats-values">
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/like.svg" alt="like" />
+                                                            </div>
+                                                            <div class="posts-stats-text">128</div>
+                                                        </li>
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/comment.svg" alt="comment" />
+                                                            </div>
+                                                            <div class="posts-stats-text">31</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="posts-stats-item">
+                                                    <div class="posts-stats-title">9-08-2016</div>
+                                                    <ul class="posts-stats-values">
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/like.svg" alt="like" />
+                                                            </div>
+                                                            <div class="posts-stats-text">67</div>
+                                                        </li>
+                                                        <li class="posts-stats-value">
+                                                            <div class="posts-stats-icon">
+                                                                <img src="img/icons/comment.svg" alt="comment" />
+                                                            </div>
+                                                            <div class="posts-stats-text">22</div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="posts-info">
+                                                <div class="posts-info-title">Image upload</div>
+                                                <div class="posts-info-date">11-04-2016</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="posts-load-more" type="button" aria-label="Load more">Load more</button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js" integrity="sha512-K/oyQtMXpxI4+K0W7H25UopjM8pzq0yrVdFdG21Fh5dBe91I40pDd9A4lzNlHPHBIP2cwZuoxaUSX0GJSObvGA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/main.js"></script>
+
+    </body>
+</html>
