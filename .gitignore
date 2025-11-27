@@ -1,0 +1,6 @@
+# Ignore everything except app folder
+*
+!.gitignore
+!README.md
+!app/
+app/.DS_Store
